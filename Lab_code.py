@@ -10,17 +10,20 @@
 
 Refugee_Country = {'Algeria': 90000, 'Botswana': 2833, 'Djibouti': 18208, 'India': 65057, 'Mauritania': 48910}
 
-def printDict(Refugee_Country):
+# Print selected countries only
+def printCountry(Refugee_Country):
     for key in Refugee_Country.keys():
         print key
-printDict(Refugee_Country)
+printCountry(Refugee_Country)
 
-def printDict(Refugee_Country):
+# Print the number of refugees only for the selected countries
+def printNumber(Refugee_Country):
     for value in Refugee_Country.values():
         print value
-printDict(Refugee_Country)
+printNumber(Refugee_Country)
 
-def printDict(Refugee_Country):
+# Print selected countries with their number of refugees for year 2014
+def printCountryRefugee(Refugee_Country):
     for (key, value) in Refugee_Country.items():
         print key, "has", value, "refugees."
-printDict(Refugee_Country)
+printCountryRefugee(Refugee_Country)
